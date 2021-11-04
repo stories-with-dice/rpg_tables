@@ -1,0 +1,4 @@
+// vehicles.js
+//
+
+top.vehicles = [];

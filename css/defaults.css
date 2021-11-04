@@ -1,0 +1,295 @@
+/*
+*   autorolltables.github.io style sheet
+*
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin');
+
+
+html, body
+{
+  height: 100%;
+}
+
+body
+{
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica Neue, Helvetica, sans-serif !important;
+  font-size: 12pt;
+  color: rgba(0,0,0,.6);
+}
+
+#page {
+  padding-left: 15px;
+}
+
+.bgimage {
+  margin: -10em;
+  position: fixed;
+  opacity: 0.3;
+  filter: alpha(opacity=30); /* For IE8 and earlier */
+}
+
+:link{
+  color: #fff;
+  text-decoration: none;
+}
+
+.select {
+  height:400px;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65);
+}
+
+.button {
+  margin-top: 2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.hover-icon-clickarea {
+  margin-right: 3px;
+  margin-left: 2px !important;
+}
+
+.bottom-btn {
+  background-color: #ccc !important;
+  color: #5A6668 !important;
+  line-height: 21px !important;
+}
+
+.search-button-addon {
+  padding: 0px 0px !important;
+  border: none !important;
+}
+
+/* Alerts */
+
+.overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.alert {
+  margin: 10px;
+  float: right;
+  white-space:nowrap;
+  color: #2b3e50 !important;
+}
+
+/* Redesigned */
+
+.logo {
+  vertical-align: middle;
+  /*float: left;*/
+  margin-top: 15px;
+  /*margin-left: 15px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 40px;
+  color: white;
+}
+
+.logo-nopad {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 40px;
+}
+
+.form-control {
+  padding: 8px 9px !important;
+}
+
+.rightview {
+  height: 436px;
+  width: auto;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65);
+  background-color:white;
+  overflow-y: scroll;
+  color: #2b3e50;
+}
+
+.rightview-srd {
+  height: 479px;
+  width: auto;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65);
+  background-color:white;
+  overflow-y: scroll;
+  color: #2b3e50;
+  padding: 10px 10px;
+}
+
+.rightview-current-display {
+  padding: 10px 10px;
+}
+
+.rightview-history-display {
+  padding: 0px 0px;
+}
+
+.srdtitle {
+  font-size: larger;
+}
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    .rightview {height: 436px !important;}
+    .rightview-srd {height: 456px !important;}
+}
+
+/* Chrome 22-28 */
+@media screen and(-webkit-min-device-pixel-ratio:0) {
+  .rightview {-chrome-:only(;
+    height: 436px !important;
+  );}
+  .rightview-srd {-chrome-:only(;
+    height: 456px !important;
+  );}
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .rightview {height: 436px !important;}
+  .rightview {height: 456px !important;}
+  #left-display-list {height: 499px !important;}
+}
+
+.text-less-muted {
+  color: #6e8399;
+}
+
+.hovertoggle {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.on {
+  background-color: #a0a0a0 !important;
+  color: white !important;
+}
+
+.hoveroff {
+  color: #DF691A;
+}
+
+/* Roll Classes */
+
+.roll-title {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.roll-title-history {
+  float: left;
+  font-size: normal;
+  font-weight: bold;
+}
+
+.roll-suggested-use {
+  font-style: italic;
+}
+
+/* Display Formatting */
+
+.indent {
+  margin-left: 20px;
+}
+
+/* History Accordion */
+
+.for-copy {
+  display:none;
+}
+
+div.accordion {
+   background-color: #eee;
+   color: #444;
+   cursor: pointer;
+   padding: 7px;
+   width: 100%;
+   text-align: left;
+   border: 0px;
+   border-collapse: collapse;
+   outline: none;
+   transition: 0.1s;
+}
+
+div.accordion.active, div.accordion:hover {
+   background-color: #ddd;
+}
+
+div.panel {
+   padding: 2px 7px;
+   background-color: white;
+   display: none;
+   margin-bottom: 0px !important;
+}
+
+div.panel.show {
+   display: block;
+}
+
+div.history-item-menu {
+  float: right;
+  z-index: 999;
+}
+
+div.delete-history-item, div.expand-collapse {
+  margin-left: 5px;
+  z-index: 9999;
+}
+
+/* New Select List */
+
+.selectlist {
+  /* Old Select List */
+  display: none !important;
+}
+
+#left-display-list {
+  height: 479px;
+  opacity: 0.65 !important;
+  filter: alpha(opacity=65);
+  background-color:white;
+  overflow-y: scroll;
+  color: #2b3e50;
+  padding: 5px;
+}
+
+.list-item {
+  /*background-color: #eee;*/
+  color: #444;
+  cursor: pointer;
+  padding: 2px;
+  width: 100%;
+  text-align: left;
+  border: 0px;
+  border-collapse: collapse;
+  outline: none;
+  transition: 0.1s;
+}
+
+.list-item:hover {
+  background-color: #ddd;
+}
+
+.list-selected {
+  background-color: #ccc;
+}
+
+span.subtext {
+  font-size: smaller;
+  font-style: italic;
+  color: #aaa;
+}
